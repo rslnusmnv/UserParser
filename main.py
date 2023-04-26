@@ -7,8 +7,8 @@ df = pd.read_csv('testaccounts.csv', header=None)
 
 # запрашиваем у пользователя значения start_row и end_row
 while True:
-    start_row = input('Введите номер начальной строки: ')
-    end_row = input('Введите номер конечной строки: ')
+    start_row = input('Enter start line number: ')
+    end_row = input('Enter end line number: ')
 
     # проверяем корректность введенных значений
     if start_row.isdigit() and end_row.isdigit() and int(start_row) <= int(end_row) <= len(df):
